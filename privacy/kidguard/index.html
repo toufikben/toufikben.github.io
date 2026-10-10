@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>سياسة خصوصية KidGuard — KidGuard Privacy Policy</title>
+  <meta name="description" content="Privacy policy for KidGuard (com.kidguard.app): what data the app processes, where it is stored, how to delete it.">
+  <link rel="canonical" href="https://toufikben.github.io/privacy/kidguard/">
+  <style>
+    :root { color-scheme: light dark; font-family: Arial, "Segoe UI", Tahoma, sans-serif; }
+    body { margin: 0; background: #f5f7fb; color: #172033; line-height: 1.8; }
+    main { max-width: 900px; margin: 0 auto; padding: 32px 20px 64px; }
+    article { background: #fff; padding: 30px 28px; border-radius: 14px; box-shadow: 0 8px 30px rgba(23,32,51,.08); }
+    h1, h2, h3 { color: #123b70; line-height: 1.35; }
+    h1 { margin-top: 0; font-size: 1.7rem; }
+    h2 { margin-top: 30px; font-size: 1.18rem; }
+    h3 { margin-top: 20px; font-size: 1rem; }
+    p, li { font-size: .98rem; }
+    .meta { color: #5a667a; font-size: .92rem; }
+    .box { background: #eef4fb; border: 1px solid #cfe0f2; border-radius: 10px; padding: 14px 16px; margin: 18px 0; }
+    .warn { background: #fff6e8; border: 1px solid #f0d3a6; }
+    table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: .92rem; }
+    th, td { border: 1px solid #dde5f0; padding: 8px 10px; text-align: right; vertical-align: top; }
+    th { background: #f0f5fb; }
+    code { background: #f1f4f9; padding: 1px 6px; border-radius: 5px; font-size: .88rem; direction: ltr; display: inline-block; }
+    .en { direction: ltr; text-align: left; border-top: 3px double #cfd8e6; margin-top: 40px; padding-top: 26px; }
+    .en th, .en td { text-align: left; }
+    a { color: #075bb5; }
+    footer { color: #6a7688; font-size: .85rem; margin-top: 26px; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0e1522; color: #e6ecf5; }
+      article { background: #141d2c; box-shadow: none; border: 1px solid #24304a; }
+      h1, h2, h3 { color: #8ec5ff; }
+      th, td { border-color: #2a3654; }
+      th { background: #1a2740; }
+      .box { background: #17253c; border-color: #2b466b; }
+      .warn { background: #2c2413; border-color: #6b5326; }
+      code { background: #1d2a42; }
+      a { color: #74b6ff; }
+    }
+  </style>
+</head>
+<body>
+<main>
+<article>
+  <h1>سياسة خصوصية KidGuard</h1>
+  <p class="meta">
+    التطبيق: <strong>KidGuard</strong> · المعرّف: <code>com.kidguard.app</code> · الإصدار المرجعي: 1.3 (versionCode 4)<br>
+    آخر تحديث: <strong>10 أكتوبر 2026</strong> (تاريخ النشر على Google Play لا يتغيّر بهذه الصفحة)<br>
+    <a href="https://toufikben.github.io/privacy/kidguard/delete-data.html">صفحة حذف البيانات / Data deletion</a>
+  </p>
+
+  <div class="box">
+    <strong>من نحن وما هذا التطبيق:</strong> KidGuard أداة يستخدمها <strong>الوالد أو الوصي القانوني</strong> لمساعدة
+    العائلة على متابعة مناطق الأمان والتنبيهات. لا يملك مطوّر التطبيق أي خادم مركزي في الإعداد الافتراضي، ولا يطلب
+    التطبيق إنشاء حساب أو تسجيل دخول. التطبيق ليس بديلًا عن الإشراف الأبوي أو خدمات الطوارئ الرسمية.
+  </div>
+
+  <h2>1) البيانات التي يعالجها التطبيق</h2>
+  <table>
+    <tr><th>الفئة</th><th>ما يُخزَّن فعليًا</th><th>أين</th></tr>
+    <tr><td>الموقع الجغرافي</td><td>قراءات GPS (خط العرض/الطول، الدقة ±متر، طابع زمني) لاكتشاف الدخول/الخروج من منطقة أمان وإظهار آخر موقع معروف.</td><td>محليًا على الجهاز، وطابور إرسال عندما تنقطع الشبكة.</td></tr>
+    <tr><td>بيانات الهوية النصية</td><td><strong>اسم الطفل</strong> كما يكتبه الوالد، <strong>رقم هاتف الوالد</strong>، و<strong>عنوان البريد</strong> المستلم للتنبيهات.</td><td>محليًا داخل إعدادات التنبيه.</td></tr>
+    <tr><td>الإعدادات والحالة</td><td>مناطق الأمان، سياسة التنبيه، حالة الحماية، سجل الحوادث، الدور (والد/طفل)، اللغة، السمة.</td><td><code>localStorage</code> للتطبيق.</td></tr>
+    <tr><td>الاقتران بين الجهازين</td><td><code>deviceToken</code>، <code>pairingCode</code>، <code>parentAccountId</code> — معرّفات عشوائية تُنشأ على الجهاز.</td><td>محليًا على الجهازين المعقرنين.</td></tr>
+    <tr><td>رمز PIN الوالد</td><td><strong>لا يُخزَّن الرمز الخام إطلاقًا</strong>؛ تُخزَّن بصمته <code>SHA-256</code> فقط.</td><td>محليًا.</td></tr>
+    <tr><td>الصوت الطارئ</td><td>تسجيل ميكروفون حتى <strong>30 ثانية</strong> عند الضغط على زر التسجيل الطارئ.</td><td><strong>في ذاكرة التطبيق مؤقتًا للتشغيل فقط.</strong> لا يُكتب على وحدة التخزين ولا يُرفق برسالة ولا يُرفع لأي خادم، ويزول بإغلاق التطبيق.</td></tr>
+    <tr><td>بيانات SMTP</td><td>الاسم المضيف والمنفذ واسم المستخدم وكلمة المرور <em>التي يكتبها المستخدم بنفسه</em> إن اختار تنبيهات البريد.</td><td>ملف إعدادات أصلي على الجهاز باسم <code>kidguard_smtp_secure_v2</code> — <strong>خارج</strong> المفاتيح التسعة التي يمسحها زر «حذف كل البيانات المحلية».</td></tr>
+  </table>
+  <p class="meta">المفاتيح المحلية التي يديرها التطبيق هي بعينها: <code>kidguard_safe_zones</code>,
+  <code>kidguard_alert_policy</code>, <code>kidguard_alert_history</code>, <code>kidguard_offline_queue</code>,
+  <code>kidguard_protection_state</code>, <code>kidguard_device_pairing</code>, <code>kidguard_role</code>,
+  <code>kidguard_lang</code>, <code>kidguard_theme</code>.</p>
+
+  <h2>2) مغادرة الجهاز: القنوات الثلاث الممكنة</h2>
+  <p><strong>تنبيه البريد (اختياري):</strong> إذا هيّأ المستخدم خادم SMTP، يرسل التطبيق رسالة بريد تحتوي اسم الطفل
+  والسبب والوقت والإحداثيات مع دقة GPS ورابط خريطة. الاتصال يتم بخادم البريد الذي اختاره المستخدم عبر
+  <strong>STARTTLS</strong> (المنفذ الافتراضي 587) — أي أن النقل مؤمَّن بالطبقة، <strong>وليس تشفيرًا طرفيًا</strong>،
+  وتخضع الرسالة لسياسة مزوّد البريد.</p>
+  <p><strong>مزامنة REST (اختياري):</strong> إذا عيّن المستخدم نقطة نهاية REST وتم الاقتران، تُرسل أحداث الطابور عبر
+  HTTPS إلى <strong>الخادم الذي يختاره المستخدم بنفسه</strong> (وقد يكون خادمًا يستضيفه هو). هذه البيانات تخضع لسياسة
+  مشغّل ذلك الخادم، ولا اطّلاع لمطوّر التطبيق عليها.</p>
+  <p><strong>رسائل SMS:</strong> في الإصدار الحالي لا يعلن ملف Android manifest صلاحية <code>SEND_SMS</code>، لذلك
+  <strong>لا يرسل التطبيق رسائل نصية تلقائيًا في الخلفية</strong>؛ يقتصر السلوك على فتح منشئ الرسائل في نظام أندرويد
+  مع نصٍّ مُجهَّز، والمراجعة والضغط على «إرسال» يبقان بيد المستخدم.</p>
+  <div class="box"><strong>لا إعلانات ولا تحليلات:</strong> لا يحتوي الإصدار على أي حزمة إعلانية ولا على Firebase ولا على
+  أي خدمة تتبّع استخدام. لا تُباع البيانات ولا تُستخدم لإنشاء ملفات إعلانية.</div>
+
+  <h2>3) الأمان</h2>
+  <p>يُخزَّن رمز PIN مجزّأً بـ<code>SHA-256</code>، وتُولَّد معرّفات الاقتران من مصدر عشوائية مُؤمَّن، ويرفض التطبيق
+  قراءات GPS القديمة لتقليل الإنذارات الكاذبة. كلمة مرور SMTP تُشفَّر بـ<code>AES/GCM</code> بمفتاح داخل
+  <strong>AndroidKeyStore</strong> على الجهاز نفسه، ولا تُرسَل إلى أي خادم لنا.</p>
+  <div class="box warn"><strong>قيود يجب أن تعرفها بصراحة:</strong>
+    <ul>
+      <li>إذا رفض جهاز معيّن استخدام AndroidKeyStore، يسقط تخزين كلمة مرور SMTP إلى <strong>نص صريح</strong> داخل إعدادات
+      التطبيق بدلًا من التشفير. على الأجهزة القديمة أو المُروَّتَة احذفها عبر الإعدادات ← التطبيقات ← KidGuard ←
+      <strong>مسح التخزين</strong> أو إلغاء التثبيت؛ لا يوجد زر داخل التطبيق يمسح إعدادات البريد.</li>
+      <li>الاسم المضيف واسم المستخدم SMTP يُخزَّنان بلا تشفير (هما أقل حساسية، لكن الإفصاح واجب).</li>
+      <li>التطبيق مُعلَّم بـ<code>allowBackup="true"</code> في الإصدار 1.3، ما يجعل إعدادات التطبيق <strong>قابلة للنسخ
+      الاحتياطي</strong> عبر أندرويد. لتفادي ذلك: الإعدادات ← النظام ← النسخ الاحتياطي ← إيقاف النسخ عن هذا التطبيق.
+      تنبيه: زر «حذف كل البيانات المحلية» يمسح بيانات التطبيق التسع ولا يمسح ملف SMTP، فقبل بيع جهاز أو نقله استخدم
+      <strong>مسح التخزين</strong> أو <strong>إلغاء التثبيت</strong>.</li>
+      <li>لا توجد وسيلة تقنية تضمن أمانًا مطلقًا. لا تشارك رمز PIN ولا رمز الاقتران.</li>
+    </ul>
+  </div>
+
+  <h2>4) الاحتفاظ والحذف</h2>
+  <p>تبقى البيانات المحلية إلى أن تحذفها أنت. يوفر التطبيق زرًا داخله لحذف بياناته:
+  <strong>الإعدادات ← قسم «الخصوصية وإدارة البيانات» ← «حذف كل البيانات المحلية»</strong> (يطلب تأكيدًا ثم يعيد تحميل
+  التطبيق). يمكن أيضًا تصدير نسخة منقّحة (استعراضية) لا تتضمّن بصمة PIN ولا معرّفات الاقتران.
+  لهذا الزر نطاق محدّد: يمسح مفاتيح التطبيق التسعة ولا يمسح ملف إعدادات SMTP. الحذف الأشمل على الجهاز هو عبر
+  إعدادات أندرويد (<strong>مسح التخزين</strong> أو <strong>إلغاء التثبيت</strong>)، فهو يزيل بيانات التطبيق الخاصة كلها
+  بما فيها ملف SMTP.
+  <a href="https://toufikben.github.io/privacy/kidguard/delete-data.html">التعليمات الكاملة هنا: صفحة حذف البيانات</a>.</p>
+
+  <h2>5) الأطفال والإشراف</h2>
+  <p>KidGuard موجَّه للوالدين أو الأوصياء القانونيين ويُعدّ ويُشغَّل من شخص بالغ. يجب تثبيته على جهاز الطفل
+  <strong>بعلم الطفل وعائلته وإذنهم</strong> بحسب سنّه والقوانين المحلية؛ التطبيق لا يخفي أيقونته ولا يعمل سرًّا، وتبقى
+  إشعارات الحماية مرئية على الجهاز. لا نستخدم بيانات الأطفال للإعلانات أو لبناء ملفات تسويقية.</p>
+
+  <h2>6) أذونات معلَّنة لا يستخدمها الإصدار الحالي</h2>
+  <p>يعلن ملف Android manifest صلاحيات <code>CAMERA</code> و<code>READ_EXTERNAL_STORAGE</code> و
+  <code>WRITE_EXTERNAL_STORAGE</code>، بينما لا يستدعي كود الإصدار الحالي الكاميرا ولا يكتب ملفات على وحدة التخزين.
+  نوثّق ذلك هنا بدل إخفائه، وتُزال هذه الصلاحيات من إصدار قادم حين تُحدَّث الحزمة؛ لا تُستخدم لأي غرض جمع بيانات اليوم.</p>
+
+  <h2>7) التغييرات والتواصل</h2>
+  <p>قد نحدّث هذه السياسة عند تغيّر وظائف التطبيق أو طريقة معالجة البيانات، ويظهر تاريخ التحديث أعلى الصفحة.
+  استفسارات الخصوصية وحذف البيانات: <a href="mailto:dbdz200@gmail.com">dbdz200@gmail.com</a>.</p>
+
+  <h2>8) هذه الصفحة هي السياسة المطلوبة من Google Play</h2>
+  <p>الرابط المعلَن في Console هو <code>https://toufikben.github.io/privacy/kidguard/</code>،
+  ورابط حذف البيانات المعلَن هو <code>https://toufikben.github.io/privacy/kidguard/delete-data.html</code>.</p>
+
+  <footer>© KidGuard — سياسة خصوصية بالعربية والإنجليزية. آخر تحديث: 10 أكتوبر 2026.</footer>
+
+  <section class="en" lang="en" dir="ltr">
+    <h1>KidGuard Privacy Policy</h1>
+    <p class="meta">App: <strong>KidGuard</strong> · package <code>com.kidguard.app</code> · reference build: 1.3 (versionCode 4) · Last updated: <strong>10 October 2026</strong></p>
+
+    <div class="box">
+      <strong>What this app is.</strong> KidGuard is used by a <strong>parent or legal guardian</strong> to monitor safe zones
+      and alerts for their family. In its default configuration the developer operates <strong>no central server</strong>, and
+      the app does <strong>not</strong> require an account or sign-in. KidGuard is not a replacement for parental supervision
+      or official emergency services.
+    </div>
+
+    <h2>1) Data the app processes</h2>
+    <table>
+      <tr><th>Category</th><th>What is actually stored</th><th>Where</th></tr>
+      <tr><td>Location</td><td>GPS readings (latitude, longitude, accuracy in metres, timestamp) to detect safe-zone entry/exit and show the last known location.</td><td>On-device, plus an outbound queue when the network is unavailable.</td></tr>
+      <tr><td>Text identifiers</td><td>The <strong>child's name</strong> as typed by the parent, the <strong>parent's phone number</strong>, and the <strong>alert email address</strong>.</td><td>On-device, inside alert settings.</td></tr>
+      <tr><td>Settings &amp; state</td><td>Safe zones, alert policy, protection state, incident history, role (parent/child), language, theme.</td><td>App <code>localStorage</code>.</td></tr>
+      <tr><td>Pairing</td><td><code>deviceToken</code>, <code>pairingCode</code>, <code>parentAccountId</code> — random identifiers generated on the devices.</td><td>On both paired devices only.</td></tr>
+      <tr><td>Parent PIN</td><td>The raw PIN is <strong>never stored</strong>; only its <code>SHA-256</code> digest.</td><td>On-device.</td></tr>
+      <tr><td>Emergency audio</td><td>Microphone recording of up to <strong>30 seconds</strong> when the emergency record button is pressed.</td><td><strong>App memory only, for playback.</strong> It is not written to storage, never attached to a message, never uploaded, and disappears when the app closes.</td></tr>
+      <tr><td>SMTP credentials</td><td>Host, port, username and password <em>entered by the user</em>, only if email alerts are configured.</td><td>Native preferences file on the device, <code>kidguard_smtp_secure_v2</code> — <strong>outside</strong> the nine keys the in-app "Delete all local data" button clears.</td></tr>
+    </table>
+    <p class="meta">The exact local keys managed by the app: <code>kidguard_safe_zones</code>,
+    <code>kidguard_alert_policy</code>, <code>kidguard_alert_history</code>, <code>kidguard_offline_queue</code>,
+    <code>kidguard_protection_state</code>, <code>kidguard_device_pairing</code>, <code>kidguard_role</code>,
+    <code>kidguard_lang</code>, <code>kidguard_theme</code>.</p>
+
+    <h2>2) Anything that leaves the device</h2>
+    <p><strong>Email alerts (optional).</strong> If the user configures an SMTP server, the app sends a message containing the
+    child's name, the reason, the time, coordinates with GPS accuracy, and a map link. The connection uses
+    <strong>STARTTLS</strong> (port 587 by default): transport security, <strong>not end-to-end encryption</strong>, and the
+    message is subject to that mail provider's own policy.</p>
+    <p><strong>REST sync (optional).</strong> If the user sets a REST endpoint and pairs a device, queued events are sent over
+    HTTPS <strong>only to the endpoint the user chose</strong> (possibly a server they host). That data falls under that
+    operator's privacy policy; the app developer has no access to it.</p>
+    <p><strong>SMS.</strong> The current release does <strong>not</strong> declare the <code>SEND_SMS</code> permission in its
+    Android manifest, so <strong>the app cannot send texts silently in the background</strong>. It only opens Android's message
+    composer with a pre-filled body; reviewing and pressing Send remains a human action.</p>
+    <div class="box"><strong>No ads, no analytics.</strong> The release contains no advertising SDK, no Firebase, and no usage
+    tracking service. Data is not sold and is not used to build advertising profiles.</div>
+
+    <h2>3) Security</h2>
+    <p>The PIN is stored as a <code>SHA-256</code> digest, pairing identifiers come from a cryptographically secure random
+    source, and stale GPS readings are rejected to reduce false alerts. The SMTP password is encrypted with
+    <code>AES/GCM</code> using a key held in <strong>AndroidKeyStore</strong> on the device; it is not sent to any server of
+    ours.</p>
+    <div class="box warn"><strong>Limitations stated plainly:</strong>
+      <ul>
+        <li>If AndroidKeyStore is unavailable on a given device, the SMTP password falls back to <strong>plaintext</strong> in
+        app preferences instead of encryption. On old or rooted devices remove it with Settings ← Apps ← KidGuard ←
+        <strong>Clear storage</strong>, or uninstall; there is no in-app button that clears the mail settings.</li>
+        <li>SMTP host and username are stored unencrypted (lower sensitivity, but disclosed for completeness).</li>
+        <li>Version 1.3 sets <code>allowBackup="true"</code>, so Android may include app preferences in device backups.
+        To prevent this: Settings ← System ← Backup ← exclude this app. Note that "Delete all local data" clears the nine app
+        keys but not the SMTP file, so before selling or handing over a device use <strong>Clear storage</strong> or
+        <strong>Uninstall</strong>.</li>
+        <li>No technical measure guarantees absolute security. Do not share your PIN or pairing code.</li>
+      </ul>
+      </div>
+
+    <h2>4) Retention and deletion</h2>
+    <p>Local data stays until you delete it. In-app: <strong>Settings ← the "Privacy &amp; Data Controls" section ←
+    "Delete all local data"</strong> (confirmation required, then the app reloads). A redacted export is also available and
+    excludes the PIN digest and pairing secrets. That button clears the nine app keys and does <strong>not</strong> clear the
+    SMTP preferences file. The wider deletion on that device is Android's <strong>Clear storage</strong> or
+    <strong>Uninstall</strong>, which removes the app's private data including the SMTP file.
+    <a href="https://toufikben.github.io/privacy/kidguard/delete-data.html">Full instructions: data deletion page</a>.</p>
+
+    <h2>5) Children and supervision</h2>
+    <p>KidGuard is intended for parents or legal guardians, configured and operated by an adult. It must be installed on a
+    child's device <strong>with the knowledge and consent of the child and the family</strong>, according to their age and
+    applicable law. The app does not hide its icon and does not run covertly; protection notifications stay visible on the
+    device. Children's data is not used for advertising or marketing profiles.</p>
+
+    <h2>6) Declared permissions the current release does not use</h2>
+    <p>The Android manifest declares <code>CAMERA</code>, <code>READ_EXTERNAL_STORAGE</code> and
+    <code>WRITE_EXTERNAL_STORAGE</code>, while the current release's code does not invoke the camera and does not write files
+    to external storage. We document this rather than hide it; these permissions are scheduled for removal in an upcoming
+    build. No data is collected through them today.</p>
+
+    <h2>7) Changes and contact</h2>
+    <p>We may update this policy when the app's features or data handling change; the revision date appears at the top of
+    this page. Privacy and deletion requests: <a href="mailto:dbdz200@gmail.com">dbdz200@gmail.com</a>.</p>
+
+    <p class="meta">Play Console declarations: privacy policy
+    <code>https://toufikben.github.io/privacy/kidguard/</code> · data deletion
+    <code>https://toufikben.github.io/privacy/kidguard/delete-data.html</code>.</p>
+  </section>
+</article>
+</main>
+</body>
+</html>
