@@ -60,6 +60,7 @@
   <table>
     <tr><th>الفئة</th><th>ما يُخزَّن فعليًا</th><th>أين</th></tr>
     <tr><td>الموقع الجغرافي</td><td>قراءات GPS (خط العرض/الطول، الدقة ±متر، طابع زمني) لاكتشاف الدخول/الخروج من منطقة أمان وإظهار آخر موقع معروف.</td><td>محليًا على الجهاز، وطابور إرسال عندما تنقطع الشبكة.</td></tr>
+    <tr><td>الموقع في الخلفية</td><td>شغّل التطبيق خدمة الواجهة الأمامية <code>KidGuardForegroundService</code> بنوع <code>foregroundServiceType="location"</code> بمجرد منح إذن الموقع على هذا الجهاز، وتُعاد تشغيلها تلقائيًا عند كل إقلاع عبر <code>BootReceiver</code>، حتى يستمر كشف الدخول/الخروج من مناطق الأمان والتطبيقُ مغلق أو غير ظاهر. الإشعار المستمر بذلك <strong>مرئي دائمًا</strong> في شريط الحالات ولا يخفيه التطبيق، ويكفي رفض إذن الموقع (أو مسح البيانات ثم عدم إعادة المنح) لإيقافه.</td><td>المعالجة على الجهاز؛ ولا تُرسل قراءات إلى خادم لنا.</td></tr>
     <tr><td>بيانات الهوية النصية</td><td><strong>اسم الطفل</strong> كما يكتبه الوالد، <strong>رقم هاتف الوالد</strong>، و<strong>عنوان البريد</strong> المستلم للتنبيهات.</td><td>محليًا داخل إعدادات التنبيه.</td></tr>
     <tr><td>الإعدادات والحالة</td><td>مناطق الأمان، سياسة التنبيه، حالة الحماية، سجل الحوادث، الدور (والد/طفل)، اللغة، السمة.</td><td><code>localStorage</code> للتطبيق.</td></tr>
     <tr><td>الاقتران بين الجهازين</td><td><code>deviceToken</code>، <code>pairingCode</code>، <code>parentAccountId</code> — معرّفات عشوائية تُنشأ على الجهاز.</td><td>محليًا على الجهازين المعقرنين.</td></tr>
@@ -148,6 +149,7 @@
     <table>
       <tr><th>Category</th><th>What is actually stored</th><th>Where</th></tr>
       <tr><td>Location</td><td>GPS readings (latitude, longitude, accuracy in metres, timestamp) to detect safe-zone entry/exit and show the last known location.</td><td>On-device, plus an outbound queue when the network is unavailable.</td></tr>
+      <tr><td>Background location</td><td>The app starts <code>KidGuardForegroundService</code> with <code>foregroundServiceType="location"</code> as soon as location permission is granted on that device, and <code>BootReceiver</code> restarts it automatically on every boot, so safe-zone entry/exit detection keeps working while the app is closed or not visible. The ongoing notification is <strong>always visible</strong> in the status bar and is not hidden; denying the location permission (or clearing the data and not re-granting) stops it.</td><td>Processed on-device; readings are not sent to any server of ours.</td></tr>
       <tr><td>Text identifiers</td><td>The <strong>child's name</strong> as typed by the parent, the <strong>parent's phone number</strong>, and the <strong>alert email address</strong>.</td><td>On-device, inside alert settings.</td></tr>
       <tr><td>Settings &amp; state</td><td>Safe zones, alert policy, protection state, incident history, role (parent/child), language, theme.</td><td>App <code>localStorage</code>.</td></tr>
       <tr><td>Pairing</td><td><code>deviceToken</code>, <code>pairingCode</code>, <code>parentAccountId</code> — random identifiers generated on the devices.</td><td>On both paired devices only.</td></tr>
